@@ -35,7 +35,7 @@ Movie |  {{$movie->title}}
         <h4>Vote: {{$movie->vote}}</h4>
       </div>
       <div class="description last">
-        <h5>Description: {{$movie->description}}</h5>
+        <h5>Plot: {{$movie->description}}</h5>
       </div>
 
         <a class="md-btn" href="{{route ("movies")}}">back to the list of movies</a>
