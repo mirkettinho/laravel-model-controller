@@ -1,9 +1,19 @@
 .home-bg{
   background-image: url("/public/background-Boolflix.jpg");
   height: 93vh;
-  h1{
-    text-align: center;
+  .learn-more{
     line-height: 93vh;
-    color: #7f140c;
+    background-color: #26890d;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover{
+      background-color: #3bd514;
+    }
+
+
   }
 }
+

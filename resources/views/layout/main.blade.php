@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>document</title>
-
+        <title>@yield("title")</title>
+        <link rel="icon" href="/favicon.png"/>
         {{-- Includiamo gli assets con la direttiva @vite --}}
         @vite('resources/js/app.js')
     </head>

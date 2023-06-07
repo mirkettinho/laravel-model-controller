@@ -19,5 +19,11 @@ class PageController extends Controller
   }
 
 
+  public function details_movie($id){
+    $movie = Movie::find($id);
+    return view("details_movie", compact("movie"));
+  }
+
+
 }
 

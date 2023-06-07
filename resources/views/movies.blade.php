@@ -1,5 +1,11 @@
 @extends("layout.main")
 
+
+@section("title")
+Movies | Movie List
+@endsection
+
+
 @section("content")
 
 
@@ -20,8 +26,10 @@
       <tr>
         <th scope="row">{{$movie->title}}</th>
         <td data-title="Released">{{$movie->original_title}}</td>
-        <td data-title="Studio"><img src="{{$movie->thumb}}" alt=""></td>
-        <td data-title="Budget" data-type="currency"><a class="more-info" href="">...</a></td>
+        <td data-title="Studio">{{$movie->vote}}</td>
+        <td>
+          <a class="more-info" href="{{ route ("details_movie", ["id" => $movie->id]) }}"><i class="fa-solid fa-circle-info"></i></a>
+        </td>
       </tr>
 
       @endforeach
