@@ -7,9 +7,8 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" href="#">Home</a>
-      <a class="nav-item nav-link" href="#">Features</a>
-      <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link {{Route::currentRouteName() === "home" ? "active" : ""}}" href="{{route("home")}}">Home</a>
+      <a class="nav-item nav-link {{Route::currentRouteName() === "movies" ? "active" : ""}}" href="{{route("movies")}}">Movie List</a>
     </div>
   </div>
 </nav>

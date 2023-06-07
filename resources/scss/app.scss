@@ -1,23 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
-.row {
-    > * {
-        height: 100vh;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        color: lightcoral;
-        background-color: aquamarine;
-        background-image: url('../img/laravel.png');
-        background-size: 50px 50px;
-    }
-}
-
-img {
-    max-height: 150px;
-}
 
 
-@import "./partials/header"
+
+@import "./partials/header";
+
+@import "./partials/home";
+
+@import "./partials/movies";
+

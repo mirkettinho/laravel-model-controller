@@ -3,6 +3,8 @@
 @section("content")
 
 
-    <h1>home</h1>
+    <div class="home-bg">
+      <h1>MOVIES</h1>
+    </div>
 
 @endsection
